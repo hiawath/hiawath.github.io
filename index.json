@@ -1,0 +1,43 @@
+[
+{
+	"uri": "/search/",
+	"title": "About the Search Engine",
+	"tags": [],
+	"description": "",
+	"content": "Docdock theme uses the last improvement available in hugo version 20+ to generate a json index file ready to be consumed by lunr.js javascript search engine.\n"
+},
+{
+	"uri": "/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/credits/",
+	"title": "Credits",
+	"tags": [],
+	"description": "contributors and packages used by hugo-theme-docdock",
+	"content": "github contributors Other contribution Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services\u0026hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester. clipboard.js - copy text to clipboard highlight.js - Javascript syntax highlighter modernizr - A JavaScript toolkit that allows web developers to use new CSS3 and HTML5 features while maintaining a fine level of control over browsers that don\u0026rsquo;t support reveal-js - The HTML Presentation Framework  Tooling  Netlify - Continuous deployement and hosting of this documentation Hugo   "
+},
+{
+	"uri": "/showcase/",
+	"title": "Docdock-built Sites",
+	"tags": [],
+	"description": "Hugo-built Sites with docdock theme",
+	"content": "https://invincible.site/ by @shazic https://bitfan.io/ by @vjeantet "
+},
+{
+	"uri": "/",
+	"title": "hiawath",
+	"tags": [],
+	"description": "",
+	"content": "한경일 일상 한경일이런저런 이야기\n소소한 "
+},
+{
+	"uri": "/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
