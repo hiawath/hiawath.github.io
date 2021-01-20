@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on hiawath</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on hiawath</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Jan 2021 17:34:21 +0900</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jupyter Notebook 기본 기능 정리</title>
+      <link>/post/jupyter-basic/</link>
+      <pubDate>Tue, 19 Jan 2021 17:34:21 +0900</pubDate>
+      
+      <guid>/post/jupyter-basic/</guid>
+      <description>Jupyter Notebook 기본 기능 정리 모드 ( 단축키 )  명령 모드 ( ESC ) : 셀에 대한 수정을 중단하고 해당 셀에 다른 jupyter notebook의 단축키나 기능을 이용할 때 사용한다. 편집 모드 ( ENTER ) : 셀의 내용을 수정하고 싶을 때 사용.  셀 스타일  MARKDOWN ( 명령모드 상태 + M ) : 셀을 마크다운 형식으로 쓸수 있도록 해준다. CODE( 명령모드 상태 + Y ) : 셀을 설정한 언어로 사용할 수 있는 상태로 변환해 준다.</description>
+    </item>
+    
+    <item>
+      <title>Jupyter Lab</title>
+      <link>/post/jupyter-lab/</link>
+      <pubDate>Tue, 19 Jan 2021 17:29:22 +0900</pubDate>
+      
+      <guid>/post/jupyter-lab/</guid>
+      <description>Version 3.0.4를 인스톨 하려면  conda install -c conda-forge jupyterlab=3  라즈베리에서 주피터랩을 사용하기 위해서는 주피터를 인스톨한 후에 아래와 같이 추가해야 한다.  sudo -H pip3 install jupyterlab sudo jupyter serverextension enable &amp;ndash;py jupyterlab &amp;ndash;system
+   c.Spawner.default_url = &amp;lsquo;/user/:username/lab&amp;rsquo;
+  왼쪽 Table of Content를 보면 목차를 볼수 있다.
+  주피터 랩 서버로 돌리기 jupyter lab &amp;ndash;ip=&amp;quot;0.0.0.0&amp;rdquo; &amp;ndash;no-browser &amp;ndash;port=8889</description>
+    </item>
+    
+  </channel>
+</rss>

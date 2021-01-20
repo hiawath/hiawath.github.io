@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hiawath</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2021-01-20T18:32:46 KST">
+<title>윈도우에서 C를 사용하기 :: hiawath</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
+
+  <link href="/theme-original/variant-green.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79101-13', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+  </head>
+  <body data-url="/about/wsl2-install/">
+    
+      <div id="headermain"></div>
+<nav id="sidebar" class="showVisitedLinks">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
+	
+  
+    <a class="baselink" href="/">hiawath</a>
+  
+
+
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
+  </div>
+
+      <ul class="topics">
+            <li data-nav-id="/" class="dd-item">
+            <a href="/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+    <li data-nav-id="/about/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/about/">about</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/about/wsl2-install/" class="dd-item active">
+        <div>
+          <a href="/about/wsl2-install/">
+            윈도우에서 C를 사용하기
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/post/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/post/">Posts</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/post/jupyter-basic/" class="dd-item">
+        <div>
+          <a href="/post/jupyter-basic/">
+            Jupyter Notebook 기본 기능 정리
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/jupyter-lab/" class="dd-item">
+        <div>
+          <a href="/post/jupyter-lab/">
+            Jupyter Lab
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/search/" class="dd-item
+        ">
+      <div>
+      <a href="/search/">About the Search Engine</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+
+
+
+        <section id="shortcuts">
+                <li class="" role=""><h3>More</h3><a href="https://github.com/hiawath/" target="_blank" rel="noopener"><i class='fa fa-github'></i> <label>Github repo</label></a></li>
+                <li class="" role=""><a href="/credits" target="_blank" rel="noopener"><i class='fa fa-bullhorn'></i> <label>Credits</label></a></li>
+        </section>
+            <a id="clear-history" class="" href="#" data-clear-history-toggle=""><i class="fa  fa-history"></i> Clear History</a>
+
+    <hr />
+    <li></li>
+    
+    </ul>
+
+ <section id="footer"><center>
+
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    
+      
+      
+      
+    <div id="top-github-link">
+      <a class="github-link" href="https://github.com/hiawath/content/about/wsl2-install.md" target="blank">
+        <i class="fa fa-code-fork"></i>
+        Improve this page
+      </a>
+    </div><div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+        <span class="links">
+        
+
+
+
+
+
+
+
+ <a href='/'>hiawath</a> > <a href='/about/'>about</a> > 윈도우에서 C를 사용하기
+
+ 
+
+ 
+
+   
+        </span>
+    </div>
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#wsl2-설치">WSL2 설치</a>
+      <ul>
+        <li><a href="#1단계---linux용-windows-하위-시스템-사용">1단계 - Linux용 Windows 하위 시스템 사용</a></li>
+        <li><a href="#2단계---wsl-2로-업데이트">2단계 - WSL 2로 업데이트</a></li>
+        <li><a href="#3단계---virtual-machine-기능-사용">3단계 - Virtual Machine 기능 사용</a></li>
+        <li><a href="#4단계---linux-커널-업데이트-패키지-다운로드">4단계 - Linux 커널 업데이트 패키지 다운로드</a></li>
+        <li><a href="#5단계---wsl-2를-기본-버전으로-설정">5단계 - WSL 2를 기본 버전으로 설정</a></li>
+        <li><a href="#6단계---선택한-linux-배포-설치">6단계 - 선택한 Linux 배포 설치</a></li>
+        <li><a href="#wsl-명령어">wsl 명령어</a></li>
+      </ul>
+    </li>
+    <li><a href="#아나콘다">아나콘다</a></li>
+    <li><a href="#jupyter설치">jupyter설치</a></li>
+  </ul>
+</nav>
+        </div>
+    </div>
+    
+
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>윈도우에서 C를 사용하기</h1>
+  
+
+
+
+    
+    
+    
+    <h2 id="wsl2-설치">WSL2 설치</h2>
+<ul>
+<li><a href="https://docs.microsoft.com/ko-kr/windows/wsl/install-win10">https://docs.microsoft.com/ko-kr/windows/wsl/install-win10</a></li>
+</ul>
+<h3 id="1단계---linux용-windows-하위-시스템-사용">1단계 - Linux용 Windows 하위 시스템 사용</h3>
+<ul>
+<li>PowerShell</li>
+</ul>
+<blockquote>
+<p>dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart</p>
+</blockquote>
+<h3 id="2단계---wsl-2로-업데이트">2단계 - WSL 2로 업데이트</h3>
+<ul>
+<li>요구사항</li>
+</ul>
+<blockquote>
+<p>x64 시스템의 경우: 버전 1903 이상, 빌드 18362 이상
+버전 및 빌드 번호를 확인하려면 Windows 로고 키 + R 을 선택하고, winver 를 입력</p>
+</blockquote>
+<h3 id="3단계---virtual-machine-기능-사용">3단계 - Virtual Machine 기능 사용</h3>
+<ul>
+<li>PowerShell</li>
+</ul>
+<blockquote>
+<p>dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart</p>
+</blockquote>
+<h3 id="4단계---linux-커널-업데이트-패키지-다운로드">4단계 - Linux 커널 업데이트 패키지 다운로드</h3>
+<ul>
+<li>WSL2이면 안해도 된다.</li>
+</ul>
+<blockquote>
+<p><a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi</a></p>
+</blockquote>
+<h3 id="5단계---wsl-2를-기본-버전으로-설정">5단계 - WSL 2를 기본 버전으로 설정</h3>
+<ul>
+<li>PowerShell</li>
+</ul>
+<blockquote>
+<p>wsl &ndash;set-default-version 2</p>
+</blockquote>
+<h3 id="6단계---선택한-linux-배포-설치">6단계 - 선택한 Linux 배포 설치</h3>
+<ul>
+<li>Microsoft Store를 열고 즐겨 찾는 Linux 배포를 선택합니다.</li>
+<li>Ubuntu 20.04 LTS</li>
+<li><a href="https://www.microsoft.com/store/apps/9n6svws3rx71">https://www.microsoft.com/store/apps/9n6svws3rx71</a></li>
+</ul>
+<h3 id="wsl-명령어">wsl 명령어</h3>
+<ul>
+<li>PowerShell 관리자 권한으로 열고</li>
+<li>설치한 각 Linux 배포에 할당된 WSL 버전을 확인할 수 있습니다.</li>
+</ul>
+<blockquote>
+<p>wsl &ndash;list &ndash;verbose</p>
+</blockquote>
+<ul>
+<li>현재 사용할 수 없는 모든 배포를 나열 합니다</li>
+</ul>
+<blockquote>
+<p>wsl &ndash;list &ndash;all</p>
+</blockquote>
+<ul>
+<li>wsl 종료및 재부팅</li>
+</ul>
+<blockquote>
+<p>Restart-Service LxssManager
+wsl -t ubuntu</p>
+</blockquote>
+<ul>
+<li>한번에 모든 wsl시스템 종료</li>
+</ul>
+<blockquote>
+<p>wsl &ndash;shutdown</p>
+</blockquote>
+<ul>
+<li>현재 실행 중인 모든 배포를 나열 합니다.</li>
+</ul>
+<blockquote>
+<p>wsl &ndash;list &ndash;running</p>
+</blockquote>
+<ul>
+<li>등록을 취소하면 배포를 다시 설치할 수 있습니다.</li>
+<li>주의: 등록을 취소 하면 해당 배포와 관련 된 모든 데이터, 설정 및 소프트웨어가 영구적으로 손실 됩니다. 스토어에서 다시 설치하면 배포의 새 복사본이 설치됩니다.</li>
+</ul>
+<blockquote>
+<p>wsl &ndash;unregister <!-- raw HTML omitted --></p>
+</blockquote>
+<hr>
+<h2 id="아나콘다">아나콘다</h2>
+<ul>
+<li>설치된 리스트보기</li>
+</ul>
+<blockquote>
+<p>conda info &ndash;envs</p>
+</blockquote>
+<ul>
+<li>C++설치하기</li>
+</ul>
+<blockquote>
+<p>conda install xeus-cling notebook -c QuantStack -c conda-forge</p>
+</blockquote>
+<ul>
+<li>가상환경 만들기</li>
+</ul>
+<blockquote>
+<p>conda create -n cling</p>
+</blockquote>
+<blockquote>
+<p>conda activate cling</p>
+</blockquote>
+<ul>
+<li>C++은 <a href="https://chana.tistory.com/entry/Windows-%EC%97%90%EC%84%9C-C-%EC%9D%84-python%EC%B2%98%EB%9F%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-jupyter-C-kernel">https://chana.tistory.com/entry/Windows-에서-C-을-python처럼-사용하기-jupyter-C-kernel</a></li>
+</ul>
+<hr>
+<hr>
+<h2 id="jupyter설치">jupyter설치</h2>
+<pre><code>&gt; sudo apt update
+&gt; sudo apt upgrade
+&gt; pip3 install jupyter notebook
+&gt; pip install pyinstaller==3.6
+&gt; pip3 install jupyter notebook
+&gt; sudo apt install python3-pip
+&gt; pip install jupyter-c-kernel
+&gt; git clone &lt;https://github.com/brendan-rius/jupyter-c-kernel.git&gt;
+&gt; mkdir ~/.local/share/jupyter/kernels/c_spec
+&gt; sudo pip3 install jupyter-c-kernel
+&gt; sudo install_c_kernel
+&gt; jupyter kernelspec list
+&gt; jupyter notebook --no-browser
+&gt; jupyter lab  --ip=&quot;0.0.0.0&quot; --no-browser
+</code></pre><hr>
+
+
+    
+    
+          <footer class=" footline" >
+	
+</footer>
+  </div>
+</div>
+
+<div id="navigation">
+<a class="nav nav-prev" href="/about/" title="about"> <i class="fa fa-chevron-left"></i><label>about</label></a>
+    <a class="nav nav-next" href="/post/" title="Posts" style="margin-right: 0px;"><label>Posts</label><i class="fa fa-chevron-right"></i></a></div>
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
+
+<script src="/js/clipboard.min.js"></script>
+<script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
+
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

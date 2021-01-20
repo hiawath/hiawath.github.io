@@ -6,9 +6,42 @@
     <description>Recent content on hiawath</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 19 Jan 2021 17:34:21 +0900</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Jupyter Notebook 기본 기능 정리</title>
+      <link>/post/jupyter-basic/</link>
+      <pubDate>Tue, 19 Jan 2021 17:34:21 +0900</pubDate>
+      
+      <guid>/post/jupyter-basic/</guid>
+      <description>Jupyter Notebook 기본 기능 정리 모드 ( 단축키 )  명령 모드 ( ESC ) : 셀에 대한 수정을 중단하고 해당 셀에 다른 jupyter notebook의 단축키나 기능을 이용할 때 사용한다. 편집 모드 ( ENTER ) : 셀의 내용을 수정하고 싶을 때 사용.  셀 스타일  MARKDOWN ( 명령모드 상태 + M ) : 셀을 마크다운 형식으로 쓸수 있도록 해준다. CODE( 명령모드 상태 + Y ) : 셀을 설정한 언어로 사용할 수 있는 상태로 변환해 준다.</description>
+    </item>
+    
+    <item>
+      <title>Jupyter Lab</title>
+      <link>/post/jupyter-lab/</link>
+      <pubDate>Tue, 19 Jan 2021 17:29:22 +0900</pubDate>
+      
+      <guid>/post/jupyter-lab/</guid>
+      <description>Version 3.0.4를 인스톨 하려면  conda install -c conda-forge jupyterlab=3  라즈베리에서 주피터랩을 사용하기 위해서는 주피터를 인스톨한 후에 아래와 같이 추가해야 한다.  sudo -H pip3 install jupyterlab sudo jupyter serverextension enable &amp;ndash;py jupyterlab &amp;ndash;system
+   c.Spawner.default_url = &amp;lsquo;/user/:username/lab&amp;rsquo;
+  왼쪽 Table of Content를 보면 목차를 볼수 있다.
+  주피터 랩 서버로 돌리기 jupyter lab &amp;ndash;ip=&amp;quot;0.0.0.0&amp;rdquo; &amp;ndash;no-browser &amp;ndash;port=8889</description>
+    </item>
+    
+    <item>
+      <title>윈도우에서 C를 사용하기</title>
+      <link>/about/wsl2-install/</link>
+      <pubDate>Mon, 18 Jan 2021 16:34:35 +0900</pubDate>
+      
+      <guid>/about/wsl2-install/</guid>
+      <description>WSL2 설치  https://docs.microsoft.com/ko-kr/windows/wsl/install-win10  1단계 - Linux용 Windows 하위 시스템 사용  PowerShell   dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+ 2단계 - WSL 2로 업데이트  요구사항   x64 시스템의 경우: 버전 1903 이상, 빌드 18362 이상 버전 및 빌드 번호를 확인하려면 Windows 로고 키 + R 을 선택하고, winver 를 입력
+ 3단계 - Virtual Machine 기능 사용  PowerShell   dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart</description>
+    </item>
     
     <item>
       <title>Credits</title>

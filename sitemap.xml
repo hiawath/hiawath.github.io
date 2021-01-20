@@ -3,11 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/about/</loc>
+    <lastmod>2021-01-18T16:34:35+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2021-01-19T17:34:21+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/search/</loc>
   </url>
   
   <url>
     <loc>/categories/</loc>
+    <lastmod>2021-01-19T17:34:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-01-19T17:34:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/jupyter-basic/</loc>
+    <lastmod>2021-01-19T17:34:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/study/</loc>
+    <lastmod>2021-01-19T17:34:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/jupyter-lab/</loc>
+    <lastmod>2021-01-19T17:29:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/wsl2-install/</loc>
+    <lastmod>2021-01-18T16:34:35+09:00</lastmod>
   </url>
   
   <url>
@@ -16,10 +52,6 @@
   
   <url>
     <loc>/showcase/</loc>
-  </url>
-  
-  <url>
-    <loc>/</loc>
   </url>
   
   <url>

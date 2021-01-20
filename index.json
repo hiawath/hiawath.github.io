@@ -1,5 +1,19 @@
 [
 {
+	"uri": "/about/",
+	"title": "about",
+	"tags": [],
+	"description": "",
+	"content": "about에 대해서\n"
+},
+{
+	"uri": "/post/",
+	"title": "Posts",
+	"tags": [],
+	"description": "",
+	"content": "A bunch of Shortcodes are available with this theme :\n"
+},
+{
 	"uri": "/search/",
 	"title": "About the Search Engine",
 	"tags": [],
@@ -14,6 +28,41 @@
 	"content": ""
 },
 {
+	"uri": "/",
+	"title": "hiawath",
+	"tags": [],
+	"description": "",
+	"content": "한경일 일상 한경일이런저런 이야기\n소소한 "
+},
+{
+	"uri": "/post/jupyter-basic/",
+	"title": "Jupyter Notebook 기본 기능 정리",
+	"tags": [],
+	"description": "",
+	"content": "Jupyter Notebook 기본 기능 정리 모드 ( 단축키 )  명령 모드 ( ESC ) : 셀에 대한 수정을 중단하고 해당 셀에 다른 jupyter notebook의 단축키나 기능을 이용할 때 사용한다. 편집 모드 ( ENTER ) : 셀의 내용을 수정하고 싶을 때 사용.  셀 스타일  MARKDOWN ( 명령모드 상태 + M ) : 셀을 마크다운 형식으로 쓸수 있도록 해준다. CODE( 명령모드 상태 + Y ) : 셀을 설정한 언어로 사용할 수 있는 상태로 변환해 준다.설정한 언어 커널에 따라 C, JAVASCRIPT 사용 가능 추가 작업이 필요기본적으로 제공해주는 건 PYTHON  단축키  셀 실행 및 명령모드( SHIFT + ENTER ) : 해당 셀을 실행하고 밑에 실행할 셀이 없을 경우 생성 및 명령모드로 전환 셀 실행 및 편집모드 ( CTRL + ENTER ) : 해당 셀을 실행하고 명령모드로 전환 셀 실행 및 셀 생성 및 새로운 셀 편집모드 ( ALT + ENTER ) : 해당 셀 실행, 무조건 셀 생성, 생성 셀 편집모드 전환 셀 삭제 ( 명령모드 + X , 명령모드 + D, D ) : 해당 셀 삭제 셀 되돌리기 ( 명령모드 + Z ) : 전 상태로 되돌린다. 셀 위로 생성 ( 명령모드 + a ) : 명령모드 상태 셀에서 위로 셀을 생성 ( Above ) 셀 아래로 생성 ( 명령모드 + b ) : 명령모드 상태 셀에서 아래로 셀을 생성 ( Below )  # 이런 식으로 스타일이 CODE 였을 때, 코드를 실행 및 결과가 출력 된다. mordiumaco = 'CHEF' mordiumaco 'C:\\\\Users\\\\mordium\\\\Downloads\\\\fast_campus_class\\\\tools\\\\jupyter' Magic Command 주피터 노트북에서 제공해주는 특별 동작 명령어.셀 스타일이 코드 스타일일 경우 사용이 가능하다.\n표현을 위한 prefix  % : 한 라인의 매직 커맨드를 동작시킨다. %% : 셀 단위의 매직 커맨드를 동작시킨다.  Magic Command List - pwd : 현 주피터 노트북 파일의 경로 - ls : 현 폴더(Directory)의 파일 리스트 - whos : 현 파일에서 메모리에 할당된 변수 리스트 - reset : 현 파일에서 메모리에 할당된 변수 리스트를 모두 삭제 # 현 파일 경로 %pwd 'C:\\\\Users\\\\mordium\\\\Downloads\\\\fast_campus_class\\\\tools\\\\jupyter' #현 폴더 파일 리스트 %ls  C 드라이브의 볼륨에는 이름이 없습니다. 볼륨 일련 번호: 4253-E13B C:\\Users\\mordium\\Downloads\\fast_campus_class\\tools\\jupyter 디렉터리 2020-06-18 오전 12:30 \u0026lt;DIR\u0026gt; . 2020-06-18 오전 12:30 \u0026lt;DIR\u0026gt; .. 2020-06-18 오전 12:29 \u0026lt;DIR\u0026gt; .ipynb_checkpoints 2020-06-18 오전 12:30 6,438 jupyter_note_basic_function.ipynb 1개 파일 6,438 바이트 3개 디렉터리 91,452,256,256 바이트 남음 #현 파일에 선언되어 메모리에 할당된 변수들 %whos Variable Type Data/Info --------------------------------------------------------- NamespaceMagics MetaHasTraits \u0026lt;class 'IPython.core.magi\u0026lt;...\u0026gt;mespace.NamespaceMagics'\u0026gt; autopep8 module \u0026lt;module 'autopep8' from '\u0026lt;...\u0026gt;e-packages\\\\autopep8.py'\u0026gt; get_ipython function \u0026lt;function get_ipython at 0x0000023724615678\u0026gt; getsizeof builtin_function_or_method \u0026lt;built-in function getsizeof\u0026gt; json module \u0026lt;module 'json' from 'C:\\\\\u0026lt;...\u0026gt;\\lib\\\\json\\\\__init__.py'\u0026gt; mordiumaco str CHEF var_dic_list function \u0026lt;function var_dic_list at 0x000002372C343558\u0026gt; # 현 파일에서 메모리에 할당된 변수 리스트를 모두 삭제 %reset Once deleted, variables cannot be recovered. Proceed (y/[n])? y #다시 확인 #기존에 해당 파일에 선언했던 메모리에 할당했던 mordiumaco 변수명이 사라짐 %whos Variable Type Data/Info --------------------------------------------------------- NamespaceMagics MetaHasTraits \u0026lt;class 'IPython.core.magi\u0026lt;...\u0026gt;mespace.NamespaceMagics'\u0026gt; get_ipython function \u0026lt;function get_ipython at 0x0000023724615678\u0026gt; getsizeof builtin_function_or_method \u0026lt;built-in function getsizeof\u0026gt; json module \u0026lt;module 'json' from 'C:\\\\\u0026lt;...\u0026gt;\\lib\\\\json\\\\__init__.py'\u0026gt; np module \u0026lt;module 'numpy' from 'C:\\\u0026lt;...\u0026gt;ges\\\\numpy\\\\__init__.py'\u0026gt; var_dic_list function \u0026lt;function var_dic_list at 0x000002372C30CC18\u0026gt; Shell Command  주피터 노트북에서 설정된 쉘 환경의 명령을 사용할 수 있다. 명령어 앞에 !를 붙이면 된다. 참고로 Window 사용자는 명령 프롬프트 CLI가 기본이다.리눅스의 기본 쉘인 BASH SHELL과 명령어가 다르니 참고. ( 필자는 윈도우 사용자 )  # 쉘 명령어 파일 리스트 출력 !dir  C 드라이브의 볼륨에는 이름이 없습니다. 볼륨 일련 번호: 4253-E13B C:\\Users\\mordium\\Downloads\\fast_campus_class\\tools\\jupyter 디렉터리 2020-06-18 오전 12:42 \u0026lt;DIR\u0026gt; . 2020-06-18 오전 12:42 \u0026lt;DIR\u0026gt; .. 2020-06-18 오전 12:29 \u0026lt;DIR\u0026gt; .ipynb_checkpoints 2020-06-18 오전 12:42 10,096 jupyter_note_basic_function.ipynb 1개 파일 10,096 바이트 3개 디렉터리 91,453,046,784 바이트 남음 # 쉘 명령어 메세지 출력 !echo 'Mordiumaco' 'Mordiumaco' "
+},
+{
+	"uri": "/categories/study/",
+	"title": "study",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/post/jupyter-lab/",
+	"title": "Jupyter Lab",
+	"tags": [],
+	"description": "",
+	"content": "Version 3.0.4를 인스톨 하려면  conda install -c conda-forge jupyterlab=3  라즈베리에서 주피터랩을 사용하기 위해서는 주피터를 인스톨한 후에 아래와 같이 추가해야 한다.  sudo -H pip3 install jupyterlab sudo jupyter serverextension enable \u0026ndash;py jupyterlab \u0026ndash;system\n   c.Spawner.default_url = \u0026lsquo;/user/:username/lab\u0026rsquo;\n  왼쪽 Table of Content를 보면 목차를 볼수 있다.\n  주피터 랩 서버로 돌리기 jupyter lab \u0026ndash;ip=\u0026quot;0.0.0.0\u0026rdquo; \u0026ndash;no-browser \u0026ndash;port=8889\n"
+},
+{
+	"uri": "/about/wsl2-install/",
+	"title": "윈도우에서 C를 사용하기",
+	"tags": [],
+	"description": "",
+	"content": "WSL2 설치  https://docs.microsoft.com/ko-kr/windows/wsl/install-win10  1단계 - Linux용 Windows 하위 시스템 사용  PowerShell   dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart\n 2단계 - WSL 2로 업데이트  요구사항   x64 시스템의 경우: 버전 1903 이상, 빌드 18362 이상 버전 및 빌드 번호를 확인하려면 Windows 로고 키 + R 을 선택하고, winver 를 입력\n 3단계 - Virtual Machine 기능 사용  PowerShell   dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart\n 4단계 - Linux 커널 업데이트 패키지 다운로드  WSL2이면 안해도 된다.   https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi\n 5단계 - WSL 2를 기본 버전으로 설정  PowerShell   wsl \u0026ndash;set-default-version 2\n 6단계 - 선택한 Linux 배포 설치  Microsoft Store를 열고 즐겨 찾는 Linux 배포를 선택합니다. Ubuntu 20.04 LTS https://www.microsoft.com/store/apps/9n6svws3rx71  wsl 명령어  PowerShell 관리자 권한으로 열고 설치한 각 Linux 배포에 할당된 WSL 버전을 확인할 수 있습니다.   wsl \u0026ndash;list \u0026ndash;verbose\n  현재 사용할 수 없는 모든 배포를 나열 합니다   wsl \u0026ndash;list \u0026ndash;all\n  wsl 종료및 재부팅   Restart-Service LxssManager wsl -t ubuntu\n  한번에 모든 wsl시스템 종료   wsl \u0026ndash;shutdown\n  현재 실행 중인 모든 배포를 나열 합니다.   wsl \u0026ndash;list \u0026ndash;running\n  등록을 취소하면 배포를 다시 설치할 수 있습니다. 주의: 등록을 취소 하면 해당 배포와 관련 된 모든 데이터, 설정 및 소프트웨어가 영구적으로 손실 됩니다. 스토어에서 다시 설치하면 배포의 새 복사본이 설치됩니다.   wsl \u0026ndash;unregister   아나콘다  설치된 리스트보기   conda info \u0026ndash;envs\n  C++설치하기   conda install xeus-cling notebook -c QuantStack -c conda-forge\n  가상환경 만들기   conda create -n cling\n  conda activate cling\n  C++은 https://chana.tistory.com/entry/Windows-에서-C-을-python처럼-사용하기-jupyter-C-kernel    jupyter설치 \u0026gt; sudo apt update \u0026gt; sudo apt upgrade \u0026gt; pip3 install jupyter notebook \u0026gt; pip install pyinstaller==3.6 \u0026gt; pip3 install jupyter notebook \u0026gt; sudo apt install python3-pip \u0026gt; pip install jupyter-c-kernel \u0026gt; git clone \u0026lt;https://github.com/brendan-rius/jupyter-c-kernel.git\u0026gt; \u0026gt; mkdir ~/.local/share/jupyter/kernels/c_spec \u0026gt; sudo pip3 install jupyter-c-kernel \u0026gt; sudo install_c_kernel \u0026gt; jupyter kernelspec list \u0026gt; jupyter notebook --no-browser \u0026gt; jupyter lab --ip=\u0026quot;0.0.0.0\u0026quot; --no-browser  "
+},
+{
 	"uri": "/credits/",
 	"title": "Credits",
 	"tags": [],
@@ -26,13 +75,6 @@
 	"tags": [],
 	"description": "Hugo-built Sites with docdock theme",
 	"content": "https://invincible.site/ by @shazic https://bitfan.io/ by @vjeantet "
-},
-{
-	"uri": "/",
-	"title": "hiawath",
-	"tags": [],
-	"description": "",
-	"content": "한경일 일상 한경일이런저런 이야기\n소소한 "
 },
 {
 	"uri": "/tags/",
