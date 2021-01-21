@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="revised" content="2021-01-21T15:44:07 KST">
-<title> Posts :: hiawath</title>
+<title>anaconda 설치 :: hiawath</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
 </script>
     
   </head>
-  <body data-url="/post/">
+  <body data-url="/post/anaconda/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="showVisitedLinks">
@@ -88,7 +88,7 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/post/" class="dd-item parent active haschildren
+    <li data-nav-id="/post/" class="dd-item parent haschildren
         ">
       <div>
       <a href="/post/"><i class='fa fa-coffee'></i> Posts</a>
@@ -109,7 +109,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/post/anaconda/" class="dd-item">
+      <li data-nav-id="/post/anaconda/" class="dd-item active">
         <div>
           <a href="/post/anaconda/">
             anaconda 설치
@@ -166,7 +166,7 @@
       
       
     <div id="top-github-link">
-      <a class="github-link" href="https://github.com/hiawath/content/post/_index.md" target="blank">
+      <a class="github-link" href="https://github.com/hiawath/content/post/anaconda.md" target="blank">
         <i class="fa fa-code-fork"></i>
         Improve this page
       </a>
@@ -183,7 +183,12 @@
 
 
 
- <a href='/'>hiawath</a> >  Posts
+
+
+
+ <a href='/'>hiawath</a> > <a href='/post/'> Posts</a> > anaconda 설치
+
+ 
 
  
 
@@ -194,7 +199,12 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#아나콘다">아나콘다</a></li>
+    <li><a href="#jupyter설치">jupyter설치</a></li>
+  </ul>
+</nav>
         </div>
     </div>
     
@@ -204,7 +214,7 @@
 
 <div id="body-inner">
   
-    <h1> Posts</h1>
+    <h1>anaconda 설치</h1>
   
 
 
@@ -212,9 +222,47 @@
     
     
     
-
-<p>A bunch of Shortcodes are available with this theme :</p>
-
+    <h2 id="아나콘다">아나콘다</h2>
+<ul>
+<li>설치된 리스트보기</li>
+</ul>
+<blockquote>
+<p>conda info &ndash;envs</p>
+</blockquote>
+<ul>
+<li>C++설치하기</li>
+</ul>
+<blockquote>
+<p>conda install xeus-cling notebook -c QuantStack -c conda-forge</p>
+</blockquote>
+<ul>
+<li>가상환경 만들기</li>
+</ul>
+<blockquote>
+<p>conda create -n cling</p>
+</blockquote>
+<blockquote>
+<p>conda activate cling</p>
+</blockquote>
+<ul>
+<li>C++은 <a href="https://chana.tistory.com/entry/Windows-%EC%97%90%EC%84%9C-C-%EC%9D%84-python%EC%B2%98%EB%9F%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-jupyter-C-kernel">https://chana.tistory.com/entry/Windows-에서-C-을-python처럼-사용하기-jupyter-C-kernel</a></li>
+</ul>
+<h2 id="jupyter설치">jupyter설치</h2>
+<pre><code>&gt; sudo apt update
+&gt; sudo apt upgrade
+&gt; pip3 install jupyter notebook
+&gt; pip install pyinstaller==3.6
+&gt; pip3 install jupyter notebook
+&gt; sudo apt install python3-pip
+&gt; pip install jupyter-c-kernel
+&gt; git clone &lt;https://github.com/brendan-rius/jupyter-c-kernel.git&gt;
+&gt; mkdir ~/.local/share/jupyter/kernels/c_spec
+&gt; sudo pip3 install jupyter-c-kernel
+&gt; sudo install_c_kernel
+&gt; jupyter kernelspec list
+&gt; jupyter notebook --no-browser
+&gt; jupyter lab  --ip=&quot;0.0.0.0&quot; --no-browser
+</code></pre><hr>
 
 
     

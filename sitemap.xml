@@ -3,8 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about/</loc>
-    <lastmod>2021-01-18T16:34:35+09:00</lastmod>
+    <loc>/scriptures/2021-01/</loc>
+  </url>
+  
+  <url>
+    <loc>/scriptures/</loc>
   </url>
   
   <url>
@@ -13,7 +16,7 @@
   </url>
   
   <url>
-    <loc>/search/</loc>
+    <loc>/about/</loc>
   </url>
   
   <url>
@@ -42,7 +45,12 @@
   </url>
   
   <url>
-    <loc>/about/wsl2-install/</loc>
+    <loc>/post/anaconda/</loc>
+    <lastmod>2021-01-18T16:34:35+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/wsl2-install/</loc>
     <lastmod>2021-01-18T16:34:35+09:00</lastmod>
   </url>
   
@@ -51,11 +59,11 @@
   </url>
   
   <url>
-    <loc>/showcase/</loc>
+    <loc>/tags/</loc>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/_header/</loc>
   </url>
   
 </urlset>
