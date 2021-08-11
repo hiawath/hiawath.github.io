@@ -40,7 +40,14 @@
   C++설치하기   conda install xeus-cling notebook -c QuantStack -c conda-forge
   가상환경 만들기   conda create -n cling
   conda activate cling
-  C++은 https://chana.tistory.com/entry/Windows-에서-C-을-python처럼-사용하기-jupyter-C-kernel  jupyter설치 &amp;gt; sudo apt update&amp;gt; sudo apt upgrade&amp;gt; pip3 install jupyter notebook&amp;gt; pip install pyinstaller==3.6&amp;gt; pip3 install jupyter notebook&amp;gt; sudo apt install python3-pip&amp;gt; pip install jupyter-c-kernel&amp;gt; git clone &amp;lt;https://github.</description>
+  C++은 https://chana.tistory.com/entry/Windows-에서-C-을-python처럼-사용하기-jupyter-C-kernel  jupyter설치 &amp;gt; sudo apt update
+&amp;gt; sudo apt upgrade
+&amp;gt; pip3 install jupyter notebook
+&amp;gt; pip install pyinstaller==3.6
+&amp;gt; pip3 install jupyter notebook
+&amp;gt; sudo apt install python3-pip
+&amp;gt; pip install jupyter-c-kernel
+&amp;gt; git clone &amp;lt;https://github.</description>
     </item>
     
     <item>
