@@ -1,5 +1,3 @@
-# hiawath.github.io
-
 ### 파이썬 교육
 
 
