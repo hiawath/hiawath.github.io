@@ -1,7 +1,7 @@
-### [2022년4차 산업혁명의 핵심기술과 파이썬]
+### [2023년 상반기 설문조사]
 
 
-[2022년4차 산업혁명의 핵심기술과 파이썬](https://hiawath.notion.site/4-2022-10-c3b57ae831fd480ab44e98ade752454d)
+[설문조사](https://forms.gle/TKQKHZiyHR5Tqbxy5)
 
 
 
