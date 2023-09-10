@@ -1,8 +1,9 @@
-### [2023년 하반기 설문조사]
+### [2023년 9월 - 4차 산업혁명의 핵심기술과 파이썬]
 
-[notion](https://www.notion.so/hiawath/2023-C-IoT-KOSTA-2xx-2e1f3e90c0e142618c9e2a39ed629ab5?pvs=4)
+[설문조사](https://forms.gle/1RG4yAdVwjHRYdr46)
 
-[설문조사](https://forms.gle/S13or2L7tBbDTkc76)
+[2022년4차 산업혁명의 핵심기술과 파이썬](https://hiawath.notion.site/4-2023-9-9e985ab2a6634d8496f7a27ffdc0ed8a?pvs=4)
+
 
 
 
