@@ -1,6 +1,8 @@
-### [2024년 1월 - 상공회의소]
+### [2024년 2월 - IoT시스템과 보안 기술을 위한 C 개발자 양성 과정]
 
-[구글 수업공유](https://docs.google.com/document/d/17eGr72TmtmC4TBo3e2JwzX2-o8q6AknNGzOxMNi-suE/edit?usp=sharing)
+[설문조사](https://docs.google.com/forms/d/e/1FAIpQLSc5p7yarNeZ__DOZd2TmnhilWYcBPIfEd4LPCmEbpplQPyNaQ/viewform?usp=sf_link)
+
+[notion]-설문조사후 가입한 아이디 승인후 입장가능.(notion.so).
 
 
 
