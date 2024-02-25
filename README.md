@@ -2,7 +2,7 @@
 
 [설문조사](https://docs.google.com/forms/d/e/1FAIpQLSc5p7yarNeZ__DOZd2TmnhilWYcBPIfEd4LPCmEbpplQPyNaQ/viewform?usp=sf_link)
 
-[notion.so](https://www.notion.so/ko-kr)
+[notion.so]-승인후 입장가능(https://www.notion.so/ko-kr)
 
 
 
