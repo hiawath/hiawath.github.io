@@ -1,8 +1,7 @@
-### [[Intel] 엣지 AI SW 아카데미(8기)]
+### 팹리스 실무형 일경험 프로그램 [1기]
 
-[google doc](https://docs.google.com/document/d/1lrNu-pBoE9Nebhl5pCuA1grSzzVcWJSmpaP_luLC7oM/edit?usp=sharing)
 
-[notion.so](https://www.notion.so/hiawath/Intel-AI-SW-8-21fc59623e618097b4f0fed26e5485b1?source=copy_link) -승인후 입장가능
+[notion.so](https://www.notion.so/hiawath/1-294c59623e61806a97a2e30adb7b66b5?source=copy_link) -승인후 입장가능
 
 
 
