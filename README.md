@@ -1,7 +1,8 @@
-### 인텔 9기 노션
+### AI 시스템반도체 SW개발자 과정(1기) 노션
 
 
-[notion.so](https://www.notion.so/hiawath/2026-Intel-AI-SW-9-fd2c59623e6183a6b4318101ab175c1b?source=copy_link) -승인요청하세요.=> 승인후 입장가능
+
+[notion.so](https://www.notion.so/hiawath/AI-SW-1-312c59623e6180cbbc87cc05804f9ffb?source=copy_link) -승인요청하세요.=> 승인후 입장가능
 
 
 
